@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Rafi</title>
+    <title>About Me | Rafi Ariful Haqiqi</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -20,23 +21,62 @@
     </nav>
 
     <div class="container">
-        <h2 style="font-size: 2.5rem; margin-bottom: 30px;">About Me</h2>
+        <h2 style="font-size: 2.5rem; margin-bottom: 10px;">About Me</h2>
+        <p style="color: var(--primary); font-weight: 600; margin-bottom: 30px;">"Membangun masa depan melalui baris kode dan kreativitas."</p>
+        
         <div class="about-grid">
+            <!-- DATA PRIBADI -->
             <div class="about-card">
-                <h3>Data Pribadi</h3>
-                <ul>
-                    <li><strong>Nama:</strong> Rafi Ariful Haqiqi</li>
-                    <li><strong>TTL:</strong> Brebes, 30 Juni 2005</li>
-                    <li><strong>Hobi:</strong> Game, Olahraga, Menggambar</li>
+                <h3><i class="fas fa-id-card"></i> Data Pribadi</h3>
+                <ul class="personal-info">
+                    <li><span>Nama:</span> Rafi Ariful Haqiqi</li>
+                    <li><span>Lahir:</span> Brebes, 30 Juni 2005</li>
+                    <li><span>Alamat:</span> Ds. Banjaratma, Brebes</li>
+                    <li><span>Status:</span> Belum Menikah</li>
+                    <li><span>Hobi:</span> Game, Olahraga, Menggambar</li>
                 </ul>
             </div>
+
+            <!-- PENDIDIKAN -->
             <div class="about-card">
-                <h3>Pendidikan</h3>
-                <p><strong>Politeknik Harapan Bersama</strong></p>
-                <p>D4 Teknik Informatika (2023 - Sekarang)</p>
-                <br>
-                <p><strong>SMA N 02 Brebes</strong></p>
-                <p>IPA (2020 - 2023)</p>
+                <h3><i class="fas fa-graduation-cap"></i> Pendidikan</h3>
+                <div class="timeline">
+                    <div class="time-item">
+                        <span class="year">2023 - Sekarang</span>
+                        <p><strong>Politeknik Harapan Bersama</strong><br>D4 Teknik Informatika</p>
+                    </div>
+                    <div class="time-item">
+                        <span class="year">2020 - 2023</span>
+                        <p><strong>SMA N 02 Brebes</strong><br>MIPA</p>
+                    </div>
+                    <div class="time-item">
+                        <span class="year">2017 - 2020</span>
+                        <p><strong>MTS N 02 Brebes</strong></p>
+                    </div>
+                    <div class="time-item">
+                        <span class="year">2011 - 2017</span>
+                        <p><strong>SD 01 Banjaratma</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SKILLS SECTION (DITAMBAH GAME DEV) -->
+        <div class="about-card" style="margin-top: 30px;">
+            <h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <p>Web Development (HTML, CSS, JS)</p>
+                    <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-box">
+                    <p>Mobile Development (Flutter)</p>
+                    <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+                </div>
+                <div class="skill-box">
+                    <p>Game Development (Unity & C#)</p>
+                    <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                </div>
             </div>
         </div>
     </div>
